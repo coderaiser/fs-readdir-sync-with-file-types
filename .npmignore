@@ -2,5 +2,5 @@
 test
 *.swp
 coverage
-lib
+index.js
 
