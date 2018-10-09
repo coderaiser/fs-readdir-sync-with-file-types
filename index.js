@@ -5,10 +5,13 @@ const {
     readdirSync,
 } = require('fs');
 
-const isString = (a) => typeof a === 'string';
+const currify = require('currify/legacy');
 
-module.exports = (path) => {
-    const names = readdirSync(path, {
+const isString = (a) => typeof a === 'string';
+const getDirEnt = currify(_getDirEnt);
+
+module.exports = (dir) => {
+    const names = readdirSync(dir, {
         withFileTypes: true
     });
     
@@ -18,11 +21,12 @@ module.exports = (path) => {
     if (!isString(names[0]))
         return names;
     
-    return names.map(getDirEnt);
+    return names.map(getDirEnt(dir));
 };
 
-function getDirEnt(name) {
-    const stat = lstatSync(name);
+function _getDirEnt(dir, name) {
+    const fullPath = path.join(dir, name);
+    const stat = lstatSync(fullPath);
     
     const {
         isBlockDevice,
