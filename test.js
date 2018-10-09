@@ -4,7 +4,7 @@ const fs = require('fs');
 const {reRequire} = require('mock-require');
 
 const test = require('tape');
-const readSync = require('.');
+const readSync = require('./index');
 
 test('readdirSync withFileTypes: not supported', (t) => {
     const {readdirSync} = fs;
