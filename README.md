@@ -61,6 +61,7 @@ isSymbolicLink: [Function: bound ] }
 
 - [fs-copy-file](https://github.com/coderaiser/fs-copy-file "fs-copy-file") - Asynchronously copies src to dest.
 - [fs-copy-file-sync](https://github.com/coderaiser/fs-copy-file-sync "fs-copy-file-sync") - Synchronously copies src to dest.
+- [fs-readdir-with-file-types](https://github.com/coderaiser/fs-readdir-with-file-types "fs-readdir-with-file-types") - Asynchronousely read directory with file types.
 
 ## License
 MIT
