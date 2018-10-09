@@ -1,6 +1,6 @@
 .*
-test
 *.swp
 coverage
 index.js
+test.js
 
