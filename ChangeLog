@@ -1,0 +1,6 @@
+2018.10.09, v1.0.1
+
+feature:
+- (npmignore) decrease bundle size
+- (fs-readdir-sync-with-file-types) add
+
