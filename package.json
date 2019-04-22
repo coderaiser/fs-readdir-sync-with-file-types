@@ -28,7 +28,9 @@
     "build": "redrun 6to5",
     "prebuild": "rimraf legacy"
   },
-  "dependencies": {},
+  "dependencies": {
+    "currify": "^3.0.0"
+  },
   "license": "MIT",
   "main": "legacy/index.js",
   "devDependencies": {
